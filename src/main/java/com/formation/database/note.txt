@@ -1,0 +1,7 @@
+1.Creation du projet;
+2.Configuration de la base de données sur le fichier application.properties;
+3.Creer le package models;
+4.Creer La classe Piece;
+5.Creer la table Fournisseur;
+6.Creer la table Modeles;
+
