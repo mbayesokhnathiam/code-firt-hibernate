@@ -2,9 +2,11 @@ package com.formation.database.repository;
 
 import com.formation.database.models.Client;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+@Repository
 public interface ClientRepository extends JpaRepository<Client,Long> {
 
     //Liste des clients dont le code est x
