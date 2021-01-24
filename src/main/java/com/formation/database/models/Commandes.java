@@ -3,6 +3,7 @@ package com.formation.database.models;
 import lombok.Data;
 
 import javax.persistence.*;
+import java.time.LocalDate;
 import java.util.List;
 
 @Entity
@@ -13,6 +14,8 @@ public class Commandes {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long Id;
+
+    private LocalDate date;
 
     @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @JoinTable(name = "commande_modele", joinColumns = {
